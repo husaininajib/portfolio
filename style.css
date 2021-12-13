@@ -18,6 +18,7 @@ body {
   height: 100%;
   font-family: var(--main-font);
   scroll-behavior: smooth;
+  background-color: var(--lightwhite-color);
 }
 
 ul,
@@ -39,7 +40,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5.5%;
+  height: 7%;
   position: fixed;
   top: 0;
   right: 0;
@@ -105,4 +106,76 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-content {
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content a {
+  color: var(--lightwhite-color);
+}
+.hero-content h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.hero-content p {
+  color: var(--lightwhite-color);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.socials-container {
+  display: flex;
+  gap: 1rem;
+}
+.about-me-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+  background-color: var(--red-color);
+  padding: 0.2rem 0.9rem;
+  padding-bottom: 0.25rem;
+  border-radius: 50px;
+}
+.about-me-btn a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* -----------about section----------- */
+.section {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.about-img-container {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.about-img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-position: center;
+}
+.about-content-container {
+  background-color: #f5f5f5;
+  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  width: 85%;
+  margin: auto;
+}
+.about-content-container p {
+  font-size: 0.8rem;
+}
+.about-content-container p:last-child {
+  margin-top: 1.5rem;
 }
