@@ -67,7 +67,6 @@ nav {
   align-items: center;
   gap: 0.6rem;
   padding: 1rem 0;
-  /* border-radius: 0 0 10px 10px; */
   transform: scaleY(0);
   transition: 0.35s;
   opacity: 0;
@@ -76,6 +75,7 @@ nav {
 .nav-panel.show {
   transform: scaleY(1);
   opacity: 1;
+  border-top: 0.2px solid var(--white-color);
 }
 .nav-panel a {
   color: var(--white-color);
@@ -136,6 +136,15 @@ nav {
 }
 .socials-container a {
   font-size: 1.4rem;
+}
+.arrow-down {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.arrow-down a {
+  color: var(--red-color);
 }
 .about-me-btn {
   display: flex;
@@ -284,6 +293,16 @@ nav {
   color: var(--lightwhite-color);
   padding: 0.3rem 0.7rem;
 }
+.portfolio-bottom-text {
+  margin-top: 2rem;
+}
+.portfolio-bottom-text p {
+  font-size: 0.85rem;
+  text-align: center;
+}
+.portfolio-bottom-text span {
+  font-weight: 600;
+}
 /* ---------contact section----------- */
 .contact-container {
   width: 95%;
@@ -305,7 +324,6 @@ nav {
   font-size: 1.2rem;
 }
 .icon {
-  /* border: 1px solid red; */
   width: 15%;
   font-size: 2rem;
   display: flex;
@@ -319,6 +337,29 @@ nav {
 .email-text {
   width: 80%;
   padding-left: 1rem;
+}
+@media screen and (max-width: 407px) {
+  .about-content-container,
+  .skills-card,
+  .portfolio-card,
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container {
+    padding: 0.5rem;
+  }
+  .icon {
+    font-size: 1.8rem;
+  }
+  .location-text,
+  .email-text {
+    width: 80%;
+    padding-left: 0.5rem;
+  }
+  .location-text p,
+  .email-text a {
+    font-size: 0.8rem;
+  }
 }
 /* ------------footer--------- */
 footer {
@@ -362,4 +403,23 @@ footer {
 }
 .copyright-container p {
   font-size: 0.8rem;
+}
+.arrow-to-home {
+  position: fixed;
+  background-color: var(--purple-color);
+  bottom: -100%;
+  right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.arrow-to-home a {
+  font-size: 1rem;
+  color: var(--white-color);
+  transform: rotate(90deg);
+  padding: 0 10px;
+}
+.arrow-to-home.appear {
+  bottom: 3%;
 }
