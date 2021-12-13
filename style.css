@@ -18,6 +18,7 @@ body {
   height: 100%;
   font-family: var(--main-font);
   scroll-behavior: smooth;
+  scroll-padding: 2rem;
   background-color: var(--lightwhite-color);
 }
 
@@ -46,6 +47,7 @@ nav {
   right: 0;
   left: 0;
   padding: 0 1.5rem;
+  background-color: var(--home-color);
 }
 .nav-logo a {
   font-size: 1rem;
@@ -145,11 +147,17 @@ nav {
 }
 
 /* -----------about section----------- */
+.about-content-container p,
+.skills-card p,
+.portfolio-text p {
+  font-size: 0.8rem;
+}
+
 .section {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-.about-section h2 {
+.section-title {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
@@ -172,10 +180,92 @@ nav {
   padding: 1.5rem;
   width: 85%;
   margin: auto;
+  border-radius: 17px;
 }
-.about-content-container p {
-  font-size: 0.8rem;
-}
+
 .about-content-container p:last-child {
+  margin-top: 1.5rem;
+}
+
+/* --------skills section---------- */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.skills-card {
+  width: 65%;
+  padding: 1rem 1.3rem;
+  min-height: 16rem;
+  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
+  border-radius: 13px;
+}
+.skills-card .img-block {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.skills-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-text-block h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+.skills-text-block p {
+  text-align: center;
+}
+.skills-card:first-child {
+  background-color: var(--purple-color);
+}
+.skills-card:nth-child(2) {
+  background-color: var(--red-color);
+}
+.skills-card:last-child {
+  background-color: var(--yellow-color);
+}
+
+/* ------------portfolio section----------- */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.portfolio-card {
+  width: 80%;
+  padding: 1rem 1.3rem;
+  min-height: 16rem;
+  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
+  border-radius: 13px;
+}
+.portfolio-img-block {
+  width: 100%;
+  height: 14rem;
+  border: 2px solid var(--purple-color);
+  margin-bottom: 0.8rem;
+}
+.portfolio-img-block img {
+  height: 100%;
+  width: 100%;
+}
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+.portfolio-text p {
+  text-align: center;
+}
+.portfolio-text p:last-child {
   margin-top: 1.5rem;
 }
