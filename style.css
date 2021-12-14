@@ -43,7 +43,6 @@ header {
       rgba(50, 49, 80, 0.8)
     ),
     url(./img/pexels-raphael-brasileiro-7498662.jpg);
-  /* background: url(./img/pexels-raphael-brasileiro-7498662.jpg); */
   background-position: center;
   background-size: cover;
 }
@@ -57,7 +56,7 @@ nav {
   right: 0;
   left: 0;
   padding: 0 1.5rem;
-  /* background-color: var(--home-color); */
+  transition: 0.3s;
 }
 nav.change-bg {
   background-color: var(--home-color);
@@ -167,6 +166,10 @@ nav.change-bg {
 }
 .arrow-down a {
   color: var(--red-color);
+  transition: 0.3s;
+}
+.arrow-down a:hover {
+  color: var(--yellow-color);
 }
 
 /* -----------about section----------- */
@@ -505,8 +508,7 @@ footer {
   }
   nav {
     height: auto;
-    padding: 0 3rem;
-    border-bottom: 0.5px solid var(--white-color);
+    padding: 0 4rem;
   }
   .nav-panel {
     position: relative;
@@ -580,6 +582,30 @@ footer {
   to {
     transform: translateX(0);
 
+    opacity: 1;
+  }
+}
+.socials-container {
+  animation: shows 1.5s;
+}
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.arrow-down {
+  animation: come 1.5s;
+}
+@keyframes come {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
