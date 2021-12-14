@@ -56,7 +56,6 @@ nav {
   color: var(--white-color);
 }
 .nav-panel {
-  background-color: var(--purple-color);
   background-color: var(--home-color);
   position: absolute;
   right: 0;
@@ -76,10 +75,15 @@ nav {
   transform: scaleY(1);
   opacity: 1;
   border-top: 0.2px solid var(--white-color);
+  box-shadow: 3px 13px 17px -15px rgba(0, 0, 0, 0.75);
 }
 .nav-panel a {
   color: var(--white-color);
   font-size: 0.9rem;
+  transition: 0.3s;
+}
+.nav-panel a:hover {
+  color: var(--yellow-color);
 }
 .hamburger {
   display: inline-block;
@@ -154,14 +158,6 @@ nav {
 }
 
 /* -----------about section----------- */
-.about-content-container p,
-.skills-card p,
-.portfolio-text p,
-.contact-container p,
-.email-text a {
-  font-size: 0.9rem;
-  color: #000;
-}
 
 .section {
   padding-top: 2rem;
@@ -170,6 +166,17 @@ nav {
 .section-title {
   font-size: 1.4rem;
   margin-bottom: 2rem;
+}
+.section p,
+section a {
+  font-size: 0.9rem;
+  color: #000;
+}
+.card {
+  background-color: var(--white-color);
+  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
+  padding: 1.5rem 1.3rem;
+  border-radius: 13px;
 }
 .about-img-container {
   width: 13rem;
@@ -184,8 +191,6 @@ nav {
   object-position: center;
 }
 .about-content-container {
-  background-color: var(--white-color);
-  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
   padding: 2rem;
   width: 85%;
   margin: auto;
@@ -205,10 +210,7 @@ nav {
 }
 .skills-card {
   width: 65%;
-  padding: 1.5rem 1.3rem;
   min-height: 16rem;
-  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
-  border-radius: 13px;
 }
 .skills-card .img-block {
   font-size: 4rem;
@@ -228,16 +230,21 @@ nav {
 }
 .skills-text-block p {
   text-align: center;
-  /* display: none; */
 }
 .skills-card:first-child {
-  background-color: var(--purple-color);
+  background-color: #b8b5ff;
 }
 .skills-card:nth-child(2) {
-  background-color: var(--red-color);
+  background-color: #fce850;
 }
 .skills-card:last-child {
-  background-color: var(--yellow-color);
+  background-color: #ff6868;
+}
+.skills-card i {
+  color: #000;
+}
+.skills-card:first-child p {
+  /* color: #cccccc; */
 }
 
 /* ------------portfolio section----------- */
@@ -250,9 +257,6 @@ nav {
 .portfolio-card {
   width: 80%;
   padding: 1.5rem 1.3rem;
-  background-color: var(--white-color);
-  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
-  border-radius: 13px;
 }
 .portfolio-img-block {
   width: 100%;
@@ -278,7 +282,7 @@ nav {
   display: none;
 }
 .portfolio-text a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   background-color: var(--purple-color);
   color: var(--lightwhite-color);
   padding: 0.3rem 0.7rem;
@@ -303,9 +307,6 @@ nav {
   width: 95%;
   height: 15rem;
   padding: 1rem 1.3rem;
-  background-color: var(--lightwhite-color);
-  box-shadow: 4px 1px 20px -14px rgba(0, 0, 0, 0.75);
-  border-radius: 13px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -333,10 +334,7 @@ nav {
   padding-left: 1rem;
 }
 @media screen and (max-width: 407px) {
-  .about-content-container,
-  .skills-card,
-  .portfolio-card,
-  .contact-container {
+  .card {
     width: 100%;
   }
   .contact-container {
@@ -430,7 +428,7 @@ footer {
     font-size: 1.7rem;
   }
   .section p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
   .section a {
     font-size: 0.85rem;
@@ -453,6 +451,9 @@ footer {
     padding-top: 3rem;
     max-width: 20rem;
     height: 23.5rem;
+  }
+  .skills-card h3 {
+    font-size: 1.3rem;
   }
   .portfolio-container {
     display: flex;
@@ -512,6 +513,9 @@ footer {
   }
   .nav-panel a:hover {
     color: var(--yellow-color);
+  }
+  .arrow-to-home {
+    right: 3rem;
   }
 }
 
