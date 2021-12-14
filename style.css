@@ -37,6 +37,15 @@ a {
 header {
   height: 100%;
   background-color: var(--home-color);
+  background: linear-gradient(
+      145deg,
+      rgba(50, 49, 80, 0.4),
+      rgba(50, 49, 80, 0.8)
+    ),
+    url(./img/pexels-raphael-brasileiro-7498662.jpg);
+  /* background: url(./img/pexels-raphael-brasileiro-7498662.jpg); */
+  background-position: center;
+  background-size: cover;
 }
 nav {
   display: flex;
@@ -48,6 +57,9 @@ nav {
   right: 0;
   left: 0;
   padding: 0 1.5rem;
+  /* background-color: var(--home-color); */
+}
+nav.change-bg {
   background-color: var(--home-color);
 }
 .nav-logo a {
@@ -56,7 +68,7 @@ nav {
   color: var(--white-color);
 }
 .nav-panel {
-  background-color: var(--home-color);
+  /* background-color: var(--home-color); */
   position: absolute;
   right: 0;
   left: 0;
@@ -538,5 +550,36 @@ footer {
   .about-content-container {
     width: auto;
     margin: 0;
+  }
+}
+/* ------------animation---------- */
+
+.hero-content h2 {
+  animation: appear 1s;
+}
+.hero-content p {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: left-appear 1s;
+}
+@keyframes left-appear {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+
+    opacity: 1;
   }
 }

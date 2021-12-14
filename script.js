@@ -1,4 +1,5 @@
 const hamburger = document.querySelector(".hamburger")
+const nav = document.querySelector("nav")
 const navPanel = document.querySelector(".nav-panel")
 const navLink = document.querySelectorAll(".nav-link")
 const arrowToTop = document.querySelector(".arrow-to-home")
@@ -23,5 +24,10 @@ window.addEventListener("scroll", () => {
         arrowToTop.classList.add("appear")
     } else {
         arrowToTop.classList.remove("appear")
+    }
+    if (scrollDistance != 0) {
+        nav.classList.add("change-bg")
+    } else {
+        nav.classList.remove("change-bg")
     }
 })
