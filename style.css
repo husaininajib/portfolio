@@ -586,7 +586,7 @@ footer {
   }
 }
 .socials-container {
-  animation: shows 1.5s;
+  animation: shows 3s;
 }
 @keyframes shows {
   from {
@@ -597,7 +597,7 @@ footer {
   }
 }
 .arrow-down {
-  animation: come 1.5s;
+  animation: come 2s;
 }
 @keyframes come {
   from {
