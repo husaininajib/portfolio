@@ -67,7 +67,7 @@ nav.change-bg {
   color: var(--white-color);
 }
 .nav-panel {
-  /* background-color: var(--home-color); */
+  background-color: var(--home-color);
   position: absolute;
   right: 0;
   left: 0;
@@ -511,6 +511,7 @@ footer {
     padding: 0 4rem;
   }
   .nav-panel {
+    background-color: transparent;
     position: relative;
     flex-direction: row;
     gap: 1.5rem;
