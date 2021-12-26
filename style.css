@@ -320,7 +320,7 @@ section a {
 /* ---------contact section----------- */
 .contact-container {
   width: 95%;
-  height: 15rem;
+  min-height: 15rem;
   padding: 1rem 1.3rem;
   margin: auto;
   display: flex;
