@@ -340,7 +340,7 @@ section a {
   justify-content: center;
   align-items: center;
 }
-.location-box, email-box {
+.location-box, .email-box {
   margin-bottom: 2.5rem;
 }
 .location-text,
